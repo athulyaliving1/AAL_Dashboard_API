@@ -15,7 +15,7 @@ router.post("/patient_activity_tax", Report.patient_activity_tax);
 router.post("/staff_extra_service", Report.staff_extra_service);
 router.post("/bill_invoice", Report.bill_invoice);
 router.post("/emergency_care", Report.getMedicalEmergencyCare);
-router.post("/tax", Report.tax);
+// router.post("/tax", Report.tax);
 
 
 // -------------------------------Branch-------------------------------- //
