@@ -16,13 +16,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors());
 
+// support parsing of application/json type post data
+app.use(bodyParser.json());
+
+
 const routes = require("./routes/allroutes");
 
-const PORT = process.env.PORT || 4080;
+const PORT = process.env.PORT || 4090;
 app.use("/", routes)
 
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
   res.send("Hello World!");
 });
 
